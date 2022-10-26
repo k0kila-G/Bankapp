@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>create your account Here</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+
+<body class="container">
+    <div class="page-header">
+        <h1>CITY BANK</h1>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/login">Home</a></li>
+                    <li><a href="/signup">Sign Up</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="/login">Log In</a></li> -->
+                    <li><a href="/logout">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container row">
+        <div class="jumbotron col-sm-4 pull-center">
+            <form action="/createaccount" method="post">
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input class="form-control" required type="text" name="nusername" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input class="form-control" required type="email" name="nemail" />
+                </div>
+                <div class="form-group">
+                    <label>Mobile:</label>
+                    <input class="form-control" required type="mobile" name="mobile" />
+                </div>
+                <div class="form-group">
+                    <label>Amount:</label>
+                    <input class="form-control" required type="amount" name="amount" />
+                </div>
+
+
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="CreateAccount" />
+                </div>
+                
+            </form>
+        </div>
+    </div></body></html>
