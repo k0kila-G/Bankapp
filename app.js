@@ -233,12 +233,12 @@ app.post("/transact", (req, res) => {
                 { nusername: receiverName },
                 { $set: { amount: updateAmount } }
               );
-              user
-                .save()
-                .then((r) => {})
-                .catch((err) => {
-                  console.log(err);
-                });
+              // user
+              //   .save()
+              //   .then((r) => {})
+              //   .catch((err) => {
+              //     console.log(err);
+              //   });
             });
           }
         });
